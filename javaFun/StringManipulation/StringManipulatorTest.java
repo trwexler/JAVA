@@ -2,10 +2,12 @@ public class StringManipulatorTest {
 	public static void main(String[] args){
 
 		StringManipulator manipulator = new StringManipulator();
+
+		//1
 		String str = manipulator.trimAndConcat("    Hello     ","     World    ");
 		System.out.println(str); // HelloWorld 
 
-		StringManipulator manipulator = new StringManipulator();
+		//2
 		char letter = 'o';
 		Integer a = manipulator.getIndexOrNull("Coding", letter);
 		Integer b = manipulator.getIndexOrNull("Hello World", letter);
@@ -14,7 +16,7 @@ public class StringManipulatorTest {
 		System.out.println(b); // 4
 		System.out.println(c); // null
 
-		StringManipulator manipulator = new StringManipulator();
+		//3
 		String word = "Hello";
 		String subString = "llo";
 		String notSubString = "world";
@@ -23,8 +25,7 @@ public class StringManipulatorTest {
 		System.out.println(a); // 2
 		System.out.println(b); // null
 
-
-		StringManipulator manipulator = new StringManipulator();
+		//4
 		String word = manipulator.concatSubstring("Hello", 1, 2, "world");
 		System.out.println(word); // eworld
 

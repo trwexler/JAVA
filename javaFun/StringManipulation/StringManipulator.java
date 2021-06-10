@@ -4,7 +4,7 @@ public class StringManipulator {
         return str1.trim().concat(str2.trim());
     }
 
-    public Integer getIndexOrNull(String str1, char z) {
+    public Integer getIndexOrNull(String str1a, char z) {
         if(str1.indexOf(z) == -1){
             return null;
         }
