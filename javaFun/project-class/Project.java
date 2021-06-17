@@ -34,10 +34,6 @@
             this.description = description;
         }
 
-        public String ElevatorPitch() {
-            return String.format(name, description);
-        }
-
 
         public Project(String name, String description){
             this.name = name;
@@ -46,6 +42,7 @@
 
         public Project(String name){
             this.name = name;
+            this.description = defaultDesc;
         }
 
 
@@ -54,10 +51,11 @@
             description = defaultDesc;
         }
 
-        // public void objectMethods(Person anotherObject) {
-        //     System.out.println("Class name: " + this.getClass().getSimpleName());
-        //     System.out.println("toString: " + this.toString());
-        //     System.out.println("Equals: " + this.equals(anotherObject));
-        // }
+
+        public String elevatorPitch(){
+            String elevator;
+            elevator = this.name + " : " +this.description;
+            return elevator;
+        }
 
     }
