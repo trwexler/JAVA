@@ -8,12 +8,12 @@
 		<version>2.5.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.codingdojo.routing</groupId>
-	<artifactId>routing</artifactId>
+	<groupId>com.codingdojo.counter</groupId>
+	<artifactId>counter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>routing</name>
-	<description>Getting Familiar with Routing assignment for Dojo</description>
+	<name>counter</name>
+	<description>Counter assignment for Dojo</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
