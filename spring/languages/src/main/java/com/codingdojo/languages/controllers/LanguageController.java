@@ -34,7 +34,7 @@ public class LanguageController {
 		model.addAttribute("allLanguages", this.lService.allLanguages());
 		return "index.jsp";
 	}
-	
+	//difference between modelattributes "language" and "allLanguages"
 	@PostMapping("/")
 	public String addLanguage(@Valid @ModelAttribute("language") Language language, BindingResult result, Model model) {
 		if(result.hasErrors()) {
