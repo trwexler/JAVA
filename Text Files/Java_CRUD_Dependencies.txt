@@ -44,7 +44,7 @@ spring.jpa.hibernate.ddl-auto=update
 
 1. CREATE SPRING STARTER PROJECT
 
-2. ADD CHANGE WAR TO JAR
+2. ADD CHANGE JAR TO WAR
 
 3. ADD WEB, DEVTOOLS, MYSQL-CONNECTOR AND JPA DEPENDENCIES (OTHER THREE LISTED ABOVE) TO POM.XML
 
@@ -76,6 +76,14 @@ iv.  <<SERVICENAME>>SERVICE (E.G. BOOKSERVICE)
 Add a WEB-INF folder.
 Inside WEB-INF, add a index.jsp file. 
 Make sure it has the necessary JSP tags above.
+
+
+
+
+npx create-react-app client --scripts-version @geoffcodesthings/react-scripts --template tailwindcss
+
+
+So in that part on the .jsp side, you're utilizing "ninja" info for the most part. Your action, method and modelAttribute are all oriented around the ninja. 
 
 
 

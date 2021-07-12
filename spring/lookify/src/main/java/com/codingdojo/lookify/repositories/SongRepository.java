@@ -11,5 +11,5 @@ public interface SongRepository extends CrudRepository <Song, Long>{
 	
 	List<Song> findTop10ByOrderByRatingDesc();
 	List<Song> findByArtistContaining(String artist);
-
+ 
 }

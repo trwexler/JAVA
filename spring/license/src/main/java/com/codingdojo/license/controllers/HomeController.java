@@ -47,7 +47,7 @@ public class HomeController {
 	}
 	
 	
-	@RequestMapping(value="newlicense", method=RequestMethod.POST)
+	@RequestMapping(value="/newlicense", method=RequestMethod.POST)
 	public String processLicense(@Valid @ModelAttribute("license") License license, BindingResult result, Model model) {
 		if(result.hasErrors()) {
 			model.addAttribute("people", this.dService.getUnlicensedPeople());

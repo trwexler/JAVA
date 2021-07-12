@@ -27,19 +27,20 @@ public class DMVService {
 //		this.lRepo = lRepo;
 //	}
 	
+	public List<Person> getAllPeople(){
+		return this.pRepo.findAll();
+	}
+	
+	
 	public Person createPerson(Person newPerson) {
 		return this.pRepo.save(newPerson);
 	}
 	
 	public Person getOnePerson(Long id) {
-		
 		return this.pRepo.findById(id).orElse(null);
 	}
 	
-	public List<Person> getAllPeople(){
-		return this.pRepo.findAll();
-	}
-	
+
 	public List<Person> getUnlicensedPeople(){
 		return this.pRepo.findByLicenseIdIsNull();
 	}
@@ -61,3 +62,24 @@ public class DMVService {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
